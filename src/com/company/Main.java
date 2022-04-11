@@ -1,22 +1,18 @@
 package com.company;
-
 import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        String num = scanner.nextLine();
         switch (num) {
-            case 1 -> System.out.println(Days.DUYSHOMBU + " -  Джава техникалык сабагын окуу куну");
-            case 2 -> System.out.println(Days.SHEYSHEMBI + " - Англис тил сабагын окуу куну");
-            case 3 -> System.out.println(Days.SHARSHEMBI + " - Джава техникалык сабагын окуу куну");
-            case 4 -> System.out.println(Days.BEYSHEMBI + " - Soft Skills сабагын окуу куну");
-            case 5 -> System.out.println(Days.JUMA + " - Дуйшомбу жана шаршемби куну отулгон темаларды кайталоо куну");
-            case 6 -> System.out.println(Days.ISHEMBI + " - Практика куну");
-            case 7 -> System.out.println(Days.JEKSHEMBI + " - Вых");
+            case "Monday" -> System.out.println(Days.MONDAY + " куну  Джава техникалык сабагын окуу куну" );
+            case "Tuesday" -> System.out.println(Days.TUESDAY + " куну Англис тил сабагын окуу куну");
+            case "Wednesday" -> System.out.println(Days.WEDNESDAY + " куну Джава техникалык сабагын окуу куну");
+            case "Thursday" -> System.out.println(Days.THURSDAY + " куну Soft Skills сабагын окуу куну");
+            case "Friday" -> System.out.println(Days.FRIDAY + " куну Дуйшомбу жана шаршемби куну отулгон темаларды кайталоо куну");
+            case "Saturday" -> System.out.println(Days.SATURDAY + " куну Практика куну");
+            case "Sunday" -> System.out.println(Days.SUNDAY + " куну эс алуу куну");
             default -> System.out.println("Мындай кун жок");
         }
-
     }
 }
